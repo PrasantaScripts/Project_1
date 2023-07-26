@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityProbe</title>
+    <link rel="stylesheet" href="css/sponsored.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- fontfamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&family=Shantell+Sans:wght@400;600&family=Tilt+Prism&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" <link
+        href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- <header> -->
+    <section id="firstpage">
+        <div>
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top bg-transparent">
+                <div class="container">
+                    <img src="https://nitdgp.ac.in/front/assets/images/logo.png" alt="">
+                    <a class="navbar-brand fw-bold" href="#">SRL@NITDGP</a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">
+                                    <b>HOME</b> </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <b>TEAM</b>
+                                </a>
+                                <ul class="dropdown-menu" style="background: rgba(0, 0, 0, 0.5);">
+                                    <li><a class="dropdown-item " href="#thirdpage"
+                                            style="text-align: center; color: #ffffff;"><b>FACULTY</b>
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#ongoing"
+                                            style="text-align: center; color: #ffffff;"><b>RESEARCH
+                                                SCHOLAR-ONGOING</b></a></li>
+                                    <li><a class="dropdown-item" href="#completed"
+                                            style="text-align: center; color: #ffffff;"><b>RESEARCH
+                                                SCHOLAR-COMPLETED</b></a></li>
+                                    <li><a class="dropdown-item" href="#seventhpage"
+                                            style="text-align: center; color: #ffffff;"><b>DISTINGUISH ALUMNI</b></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="text-align: center; color: #ffffff;"><b>ALUMNI</b></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#fifthpage"
+                                            style="text-align: center; color: #ffffff;"><b>RESEARCH
+                                                ENGINEER</b></a></li>
+                                    <li><a class="dropdown-item" href="#sixthpage"
+                                            style="text-align: center; color: #ffffff;"><b>STUDENTS</b></a></li>
+                                    <li><a class="dropdown-item" href="#technical"
+                                            style="text-align: center; color: #ffffff;"><b>TECHNICAL
+                                                STUFF</b></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="publications.html"><b>PUBLICATIONS</b></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <b> RESEARCH AREA </b>
+                                </a>
+                                <ul class="dropdown-menu " style="background: rgba(0, 0, 0, 0.5);">
+                                    <li><a class="dropdown-item " href="hci.html"
+                                            style="text-align: center; color: #ffffff;"><b>HCI</b>
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="networking.html"
+                                            style="text-align: center; color: #ffffff;"><b>Mobile computing</b></a></li>
+                                    <li><a class="dropdown-item" href="iot.html"
+                                            style="text-align: center; color: #ffffff;"><b>Speech
+                                                Processing</b></a></li>
+                                    <li><a class="dropdown-item" href="hci.html"
+                                            style="text-align: center; color: #ffffff;"><b>NLP</b></a></li>
+                                    <li><a class="dropdown-item" href="networking.html"
+                                            style="text-align: center; color: #ffffff;"><b>5G
+                                                Communication</b></a></li>
+                                    <li><a class="dropdown-item" href="iot.html"
+                                            style="text-align: center; color: #ffffff;"><b>Internet
+                                                of Things(IOT)</b></a></li>
+                                    <li><a class="dropdown-item" href="networking.html"
+                                            style="text-align: center; color: #ffffff;"><b>Drone Technology</b></a></li>
+                                    <li><a class="dropdown-item" href="iot.html"
+                                            style="text-align: center; color: #ffffff;"><b>Cellular
+                                                Automata</b></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sponsored.html"><b>SPONSORED PROJECT</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html"><b>GALLERY</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>MEDIA</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ninthpage"><b>CONTACT</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="tcs-1">
+                <div>
+                    <h1>Sponsored Projects</h1>
+                    <h6><em></em></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tcs-2">
+
+        <div style="border-bottom: 3px solid black;">
+            <h3>CityProbe</h3>
+        </div>
+
+        <div class="tcs-3">
+
+            <h4 class="tcs-Kiosk">
+                <b>CityProbe :
+                    A CityScale
+                    Pervasive Sensing System
+                    for Monitoring Road Conditions,
+                    Air and Sound Pollution</b>
+            </h4>
+        </div>
+        <div class="container" style="background-color: #00000018;">
+            <div class="whole_img">
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide col-lg-3">
+                                <div class="img_box">
+                                    <img src="img/c1.JPG" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="splide__slide col-lg-3">
+                                <div class="img_box">
+                                    <img src="img/c2.JPG" alt="" class="w-100">
+                                    <img src="img/c3.JPG" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="splide__slide col-lg-3">
+                                <div class="img_box">
+                                    <img src="img/c3.JPG" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="splide__slide col-lg-3">
+                                <div class="img_box">
+                                    <img src="img/c4.JPG" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="splide__slide col-lg-3">
+                                <div class="img_box">
+                                    <img src="img/c5.JPG" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="splide__slide col-lg-3">
+                                <div class="img_box">
+                                    <img src="img/c6.JPG" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="splide__slide col-lg-3">
+                                <div class="img_box">
+                                    <img src="img/c7.JPG" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="img_box">
+                                    <img src="img/c8.JPG" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="tcs-sec-8">
+        <div class="container">
+            <div class="row" style="background-color: #726c6c47;">
+                <div class="col-lg-5">
+                    <h4 class="tcs-text1">Project Overview</h4>
+                </div>
+                <div class="col-lg-7">
+                    <div class="tcs-5">
+                        <h6> <b>Project Description</b> </h6>
+                        <p>To determine the health of a city, several parameters need to be considered. The proposed
+                            project
+                            aims to probe and understand two specific aspects of city health: road infrastructure
+                            and
+                            polluĕon‐levels. We propose a city‐scale pervasive sensing framework, CityProbe, which
+                            seamlessly integrates customized sensing units and mobile phone sensors. The proposed
+                            soluĕon
+                            scales by leveraging crowd‐sensed reports from customized and mobile phone sensors, to
+                            monitor
+                            air and sound polluĕon levels and to detect poor road condiĕons, in real‐ĕme. CityProbe
+                            is
+                            novel in
+                            incorporaĕng both parĕcipatory and automated detecĕon techniques; and in being a
+                            first‐of‐a‐kind framework that explores causaliĕes between road condiĕons and polluĕon
+                            levels. A
+                            dashboard depicĕng the derived insights from the crowd‐sensed reports will be presented
+                            to
+                            city
+                            agencies for assistance in policy‐making; and ciĕzens will receive customized alerts and
+                            recommendaĕons related to travel condiĕons. We will field deploy our soluĕon in three
+                            ciĕes:
+                            Mumbai, Durgapur and Chandigarh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tcs-sec-5">
+        <div style="border-bottom: 3px solid black;">
+            <h3>Publications</h3>
+        </div>
+        <div class="Scroll-bg">
+            <div style="margin: 0% 10%;">
+                <button class="btn-12 " id="getBtn">Patent</button><button class="btn-12">Journal</button><button
+                    class="btn-12">Conference</button>
+            </div>
+            <div class="Scroll-div">
+                <div class="Scroll-obj">
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                    <div class="zoom1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut earum nobis. Lorem
+                            ipsum,
+                            dolor sit amet consectetur adipisicing elit. Sequi deleniti similique sed?Lorem ipsum dolor
+                            sit
+                            amet consectetur, adipisicing elit. Accusamus doloribus magni eaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tcs-sec-3">
+
+
+        <div class="col-lg-12" style=" padding-top: 2% ; border-bottom: 3px solid black;">
+            <h2> <b>TEAM MEMBERS</b> </h2>
+        </div>
+        <div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-4" style="text-align:  center;">
+                <h3 class=""
+                    style="border: 3px solid rgba(255, 255, 255, 0.639); margin-top: 5%; background-color: rgba(0, 0, 0, 0.553);">
+                    PI
+                </h3>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-4" style="padding: 3% 3%;"><img src="img/subrata_nandi.jpeg" alt="Card image cap"
+                            class="w-100 tcs-img">
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="tcs-headname">
+                            <div style="padding: 3% 3% ; ">
+
+                                <h5 class="text-primary"><b> Prof. Subrata Nandi</b></h5>
+
+                                <button
+                                    style="color: rgb(255, 242, 242); background-color:rgba(0, 0, 0, 0.877); box-shadow: 1px 2px 10px 2px #7e7e7ee2; padding: 1% 1%;">College</button>
+                                <button
+                                    style="color: rgb(255, 242, 242); background-color:rgba(0, 0, 0, 0.831) ;box-shadow: 1px 2px 10px 2px #7e7e7ee2; padding: 1% 1%;">Linkedin</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-12" style="text-align:  center;">
+                <h3 class="" style="border: 3px solid rgba(255, 255, 255, 0.639); margin-top: 5%; background-color: rgba(0, 0, 0, 0.553)
+                ;">
+                    Co-PI's
+                </h3>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-5" style="padding: 3% 3%;"><img src="img/sujoysaha.jpg" alt="Card image cap"
+                                class="w-100 tcs-img">
+                        </div>
+
+
+                        <div class="col-lg-5">
+                            <div class="tcs-headname " style="margin-top: 62%;">
+                                <div style="padding: 3% 3% ; ">
+
+                                    <h5 class="text-primary"><b>Dr. Sujoy Saha</b></h5>
+
+                                    <button
+                                        style="color: rgb(255, 242, 242); background-color:rgba(0, 0, 0, 0.877); box-shadow: 1px 2px 10px 2px #7e7e7ee2; padding: 1% 1%;">College</button>
+                                    <button
+                                        style="color: rgb(255, 242, 242); background-color:rgba(0, 0, 0, 0.831) ;box-shadow: 1px 2px 10px 2px #7e7e7ee2; padding: 1% 1%;">Linkedin</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-5 ms-auto" style="padding: 3% 3%;"><img src="img/mousumi_saha.jpg"
+                                alt="Card image cap" class="w-100 tcs-img">
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="tcs-headname " style="margin-top: 62%" ;>
+                                <div style=" padding: 3% 3% ; ">
+
+                                    <h5 class=" text-primary"><b>Dr. Mousumi Saha
+                                        </b></h5>
+
+                                    <button
+                                        style="color: rgb(255, 242, 242); background-color:rgba(0, 0, 0, 0.877); box-shadow: 1px 2px 10px 2px #7e7e7ee2; padding: 1% 1%;">College</button>
+                                    <button
+                                        style="color: rgb(255, 242, 242); background-color:rgba(0, 0, 0, 0.831) ;box-shadow: 1px 2px 10px 2px #7e7e7ee2; padding: 1% 1%;">Linkedin</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="tcs-sec-6">
+        <div class="" style=" margin-bottom: 3%; border-bottom: 3px solid black; ">
+            <h3>Research Scholars/Engineers</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+                <div class="card  ms-auto jalis" style="width: 15rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card  ms-auto jalis" style="width: 15rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="tcs-sec-4">
+        <div class="" style=" margin-bottom: 3%; border-bottom: 3px solid black;">
+            <h3>STUDENTS</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card  ms-auto jalis" style="width: 12rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+
+
+                </div>
+                <div>
+                    <h4 class="tcs-text1 tcs-text2">
+
+                    </h4>
+                </div>
+
+                <div class=" card ms-auto jalis" style="width: 12rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 ms-auto">
+
+
+                <div class="card ms-auto jalis" style="width: 12rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+
+
+                </div>
+
+
+                <div class="card  jalis" style="width: 12rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+
+
+                </div>
+                <div class="card ms-auto jalis" style="width: 12rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+
+
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-4 ms-auto">
+
+
+                <div class="card  ms-auto jalis" style="width: 12rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+
+
+                </div>
+
+
+                <div class="card jalis" style="width: 12rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+
+
+                </div>
+
+
+                <div class="card ms-auto jalis" style="width: 12rem;">
+                    <img class="card-img12" src="img/male.jpg" alt="Card image cap">
+
+                    <h5 class="nme1">Unkown Unknown</h5>
+                    <h6 class="nme2">NIT Durgapur</h6>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+
+        <i class="brands-icon fa-brands fa-instagram fa-instagram"></i>
+        <i class="brands-icon fa-brands fa-github fa-github"></i>
+        <i class="brands-icon fa-brands fa-linkedin fa-linkedin"></i>
+        <p>© Copyright NIT Durgapur 2023</p>
+
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+
+        var splide = new Splide('.splide', {
+            perPage: 4,
+            gap: '2rem',
+            autoplay: true,
+            type: 'loop',
+            drag: 'free',
+            snap: true,
+            arrows: true,
+            breakpoints: {
+                640: {
+                    perPage: 2,
+                    gap: '.7rem',
+                    height: '6rem',
+                },
+                480: {
+                    perPage: 1,
+                    gap: '.7rem',
+                    height: '6rem',
+                },
+            },
+        });
+
+        splide.mount();
+    </script>
+</body>

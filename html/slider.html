@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Splide Slider Example</title>
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- fontfamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&family=Shantell+Sans:wght@400;600&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" <link
+        href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+
+<body>
+    <div class="splide">
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide col-lg-3">
+                    <div class="img_box">
+                        <img src="img/ASIF_WASAY.jpeg" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="splide__slide col-lg-3">
+                    <div class="img_box">
+                        <img src="img/c2.JPG" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="splide__slide col-lg-3">
+                    <div class="img_box">
+                        <img src="img/c3.JPG" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="splide__slide col-lg-3">
+                    <div class="img_box">
+                        <img src="img/c4.JPG" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="splide__slide col-lg-3">
+                    <div class="img_box">
+                        <img src="img/c5.JPG" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="splide__slide col-lg-3">
+                    <div class="img_box">
+                        <img src="img/c6.JPG" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="splide__slide col-lg-3">
+                    <div class="img_box">
+                        <img src="img/c7.JPG" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="img/c8.JPG" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+            perPage: 4,
+            gap: '2rem',
+            autoplay: true,
+            type: 'loop',
+            drag: 'free',
+            snap: true,
+            arrows: false,
+            breakpoints: {
+                640: {
+                    perPage: 2,
+                    gap: '.7rem',
+                    height: '6rem',
+                },
+                480: {
+                    perPage: 1,
+                    gap: '.7rem',
+                    height: '6rem',
+                },
+            },
+        });
+
+        splide.mount();
+    </script>
+</body>
+
+</html>

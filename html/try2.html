@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" <link
+        href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    </header>
+    <section id="titlez1">
+        <div>
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top bg-transparent">
+                <div class="container">
+                    <img src="https://nitdgp.ac.in/front/assets/images/logo.png" alt="">
+                    <a class="navbar-brand fw-bold" href="#">SRL@NITDGP</a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">
+                                    <b>HOME</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="publications.html"><b>PUBLICATIONS</b></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <b> RESEARCH AREA </b>
+                                </a>
+                                <ul class="dropdown-menu  bg-secondary">
+                                    <li><a class="dropdown-item " href="hci.html"
+                                            style="text-align: center; color: #ffffff;"><b>HCI</b>
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="networking.html"
+                                            style="text-align: center; color: #ffffff;"><b>Mobile computing</b></a></li>
+                                    <li><a class="dropdown-item" href="iot.html"
+                                            style="text-align: center; color: #ffffff;"><b>Speech
+                                                Processing</b></a></li>
+                                    <li><a class="dropdown-item" href="hci.html"
+                                            style="text-align: center; color: #ffffff;"><b>NLP</b></a></li>
+                                    <li><a class="dropdown-item" href="networking.html"
+                                            style="text-align: center; color: #ffffff;"><b>5G
+                                                Communication</b></a></li>
+                                    <li><a class="dropdown-item" href="iot.html"
+                                            style="text-align: center; color: #ffffff;"><b>Internet
+                                                of Things(IOT)</b></a></li>
+                                    <li><a class="dropdown-item" href="networking.html"
+                                            style="text-align: center; color: #ffffff;"><b>Drone Technology</b></a></li>
+                                    <li><a class="dropdown-item" href="iot.html"
+                                            style="text-align: center; color: #ffffff;"><b>Cellular
+                                                Automata</b></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sponsored.html"><b>SPONSORED PROJECT</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>GALLERY</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>MEDIA</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+
+
+            <div class="title-1">
+                <div>
+                    <h2>Publications @ System Research Lab Projects</h2>
+                </div>
+    </section>
+
+    <!-- <div class="container col-md-10">
+        <div class="row">
+            <div class="col-md-8 mt-4">
+                <div class="col-lg-8 " style="padding-left: 4%;">
+
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options"  autocomplete="off"> JOURNAL
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options"  autocomplete="off"> CONFERENCE
+                        </label>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div> -->
+
+
+    <!-- publications -->
+
+    <section id="publication">
+        <h2 style="padding-left: 3%;">Research Lab Projects:</h2>
+        <section id="headerpub">
+
+
+            <!-- Dropdown list of persons -->
+            <select id="person-list" onchange="showProjects()">
+                <option value="">--Select a person--</option>
+                <option value="abc">Subrata Nandi</option>
+                <option value="xyz">Sujoy Saha</option>
+            </select>
+
+
+            <!-- Dropdown list of persons -->
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn  btn-secondary">
+                    <input type="radio" name="options" value="all" checked onclick="showProjects()">All
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" value="top" onclick="showProjects()">Journals
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" value="best" onclick="showProjects()">Conferences
+                </label>
+            </div>
+        </section>
+
+        <!-- Container to display projects -->
+        <div id="project-list">
+            <!-- Projects for person 1 -->
+            <div id="abc-projects" style="display: none;">
+                <h3 style="display: none;" data-type="top">Journals for Prof. Subrata Nandi</h3>
+                <ul>
+                    <div class="card pub1">
+                        <div class="card-body ">
+
+
+                            <li>
+                                Prithviraj Pramanik, Prasenjit Karmakar, Praveen Kumar Sharma, Soumya- jit
+                                Chatterjee, Abhijit Roy,
+                                Santanu
+                                Mandal, Subrata Nandi, Sandip Chakraborty, Mousumi Saha, Sujoy Saha,AQuaMoHo:
+                                Localized Low-Cost
+                                Outdoor
+                                Air
+                                Quality Sensing over a
+
+                                Thermo-Hygrometer,ACM Transactions on Sensor Networks, 2022.
+                            </li>
+
+
+
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Prasenjit Karmakar, Vijay K. Shah, Satyaki Roy, Krishnandu Hazra, Sujoy Saha, and
+                                Subrata Nandi.
+                                "Reliable
+                                Backhauling in Aerial Communication Networks against UAV Failures: A Deep
+                                Reinforcement Learning
+                                Approach."
+                                IEEE
+                                Transac- tions on Network and Service Management (2022).</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Krishnandu Hazra, Tanmoy Ghosh, Avirup Mukherjee, Sujoy Saha, Subrata Nandi,
+                                Saptarshi Ghosh, and
+                                Sandip
+                                Chakraborty. "Sustainable text summarization over mobile devices: An energy-aware
+                                approach."
+                                Sustainable
+                                Computing: Informat- ics and Systems 32 (2021): 100607.</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Krishnandu Hazra, Vijay K Shah, Satyaki Roy, Swaraj Deep, Sujoy Saha, Subrata Nandi
+                                "Exploring
+                                Biological
+                                Robustness for Reliable Multi-UAV Networks", IEEE Transactions on Network and
+                                Service Management,
+                                2021.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Pallav Sonowal, Manish Kumar, Sujoy Saha and Subrata Nandi,
+                                "RoadSpeedSense:
+                                Context-Aware
+                                Speed
+                                Proffling from Smart-phone Sensors", EAI Endorsed Transactions on Energy Web, 2021.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Krishnandu Hazra, Vijay K Shah, Simone Silvestri, Vaneet Aggarwal, Sajal K Das,
+                                Subrata Nandi, Sujoy
+                                Saha,"Designing esocient communication infrastructure in post-disaster situations
+                                with limited
+                                availability of
+                                network resources", Elsevier Journal of Computer Communications, 2020.</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Joyita Chakraborty, Dinesh Kumar Pradhan, Subrata Nandi, \On the identiff- cation
+                                and analysis of
+                                citation
+                                pattern irregularities among journals", Expert Systems (Wiley), 2020</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Dinesh K. Pradhan, Joyita Chakraborty,
+                                Prasenjit Choudhury, Subrata Nandi, \An automated con ict of interest based greedy
+                                approach
+                                for conference
+                                paper as- signment system", Journal of Infometrics (Elsevier), 2020</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Munshi Yusuf Alam and Akash Nandi and Abhay Kumar and Sujoy Saha and Mousumi Saha
+                                and
+                                Subrata Nandi and
+                                Sandip Chakraborty, "Crowdsourcing from the True crowd: Device, vehicle,
+                                road-surface and driving
+                                independent road proffling from smartphone sensors", Elsevier Journal of Pervasive
+                                and Mobile Computing,
+                                2020.</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Kashi Nath Datta, Anindita Banerjee, Partha Sarathi Paul, Subrata Nandi, Sujoy Saha,
+                                " Asynchronous
+                                Binomial Galois Field Based Energy Management in DTN Network ", Journal of Wireless
+                                Networks (Springer),
+                                2020.</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Rohit Verma, Aviral Shrivastava, Kingshuk De, Bivas Mitra, Sujoy Saha, Niloy
+                                Ganguly,
+                                Subrata Nandi,
+                                Sandip Chakroborty ,"A Smartphone-based Passenger Assistant for Public Bus Commute
+                                in Developing
+                                Countries," , IEEE Transactions on Computational Social Systems, 2020.</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Partha Sarathi Paul, Bishakh C Ghosh, Hridoy S Datta, Kingshuk De, Arka P Basu,
+                                Prithviraj Pramanik,
+                                Sujoy Saha, Sandip Chakraborty, Niloy Ganguly, Sub- rata Nandi" CRIMP: Here Crisis
+                                Mapping Goes Osiine
+                                ", Journal of Network and Computer Applications, 2019.</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Tanmoy Chakraborty, Subrata Nandi, \Universal trajectories of scientific suc- cess",
+                                Knowledge and
+                                Information Systems (Springer), 2017</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Dinesh Pradhan, Partha Sarathi Paul, Umesh Maheswari, Subrata Nandi, Tanmoy
+                                Chakraborty," C3-index: a
+                                PageRank based multi-faceted metric for authors' performance measurement",
+                                Scientometrics (Springer),
+                                2017</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Sujoy Saha, Subrata Nandi, P. S. Paul, vijay Shah, Akash Roy, Sajal .K Das, "
+                                Designing delay constrained
+                                hybrid ad hoc network infrastructure for post-disaster communication", Elsevier
+                                Journal of Ad Hoc
+                                Networks, Volume 25, Part B, 2015, pp. 406-427.</li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Sujoy Saha, Subrata Nandi, Rohit Verma, Satadal Sengupta, Kartikeya Singh, Vivek
+                                Sinha, Sajal K. Das,
+                                \Design of Esocient Lightweight Strategies to Combat DoS Attack in Delay Tolerant
+                                Network Routing",
+                                Journal of Wireless Networks (Springer), 2016, pp. 1-22.</li>
+                        </div>
+                    </div>
+                </ul>
+                <h3 style="display: none;" data-type="best">Conferences for Prof. Subrata Nandi</h3>
+                <ul>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Prasenjit Karmakar, Abhijit Roy, Arpan Saha, Soumyajit Chat-
+                                terjee, Sandip
+                                Chakraborty,
+                                Sujoy
+                                Saha, Subrata Nandi,"Ad-hocBusPoI: Context Analysis of Ad-hoc Stay-locations
+                                from Intra-city Bus
+                                Mobility and
+                                Smartphone Crowdsensing", Proceedings of the 28th International Conference on
+                                Advances in Geographic
+                                Information
+                                Systems, 2020.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Bishakh Chandra Ghosh, Ankan Ghosh, Sujoy Saha, Sub- rata
+                                Nandi, Sandip
+                                Chakraborty,"Disaster Strikes! Internet Blackout! What's the Fate of Crisis
+                                Mapping?", 22nd
+                                International
+                                Conference on Human-Computer Inter- action with Mobile Devices and Services,
+                                2020.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Partha Sarathi Paul, Bishakh Chandra Ghosh, Ankan Ghosh, Sujoy Saha, Sub- rata
+                                Nandi, Sandip
+                                Chakraborty,"Aco-Wi:
+                                Acoustic Initiated Wi-Fi Peer-group Communication for Opportunistic Messaging",
+                                22nd International
+                                Conference on
+                                Human-Computer Interaction with Mobile Devices and Services, 2020.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Munshi Yusuf Alam, Harshit Anurag, Md Shahrukh Imam, Sujoy Saha, Mousumi Saha,
+                                Subrata Nandi,
+                                Sandip
+                                Chakraborty,"Urban Safety as a Service During Bike Navigation: My Smartphone Can
+                                Monitor My
+                                Street-Lights", IEEE
+                                International Conference on Smart Computing (SMARTCOMP), 2020.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Prithviraj Pramanik, Tamal Mondal, Subrata Nandi and Mousumi Saha,"AirCalypse:
+                                Can Twitter help in
+                                Urban
+                                Air
+                                Quality Measurement and Who are the In uential Users?", ACM WWW 2020 (Sideways
+                                Workshop), Taipei
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Krishnandu Hazra, Vijay K. Shah, Mohd Bilal, Simone Silvestri, Sajal K. Das,
+                                Subrata Nandi, and
+                                Sujoy
+                                Saha. "A
+                                Novel Network Architecture for Resource- constrained Post-disaster
+                                Environments." In 2019 11th
+                                International
+                                Conference on Communication Systems Networks (COMSNETS), pp. 328-335. IEEE,
+                                2019.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Chandrika Mukherjee, Bishakh Chandra Ghosh, Sudipta
+                                Pandit, Sujoy Saha, and
+                                Subrata
+                                Nandi.
+                                2019. On Designing Fast-Deployable `Localized' GIS Platform for using `Oine'
+                                during Post-Disaster
+                                Situation. In
+                                In- ternational Conference on Distributed Computing and Networking ( ICDCN'19
+                                ),January 4{7, 2019,
+                                Bangalore,
+                                India.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Naman Mehta, Aman Kumar Das, Sourav Agarwal, Sujoy Saha,
+                                and Subrata Nandi.
+                                2019.
+                                SURAKSHIT
+                                : A smartphone-based application for `Localized' GIS Data Aggregation in absence
+                                of Internet. In
+                                International
+                                Con- ference on Distributed Computing and Networking (ICDCN '19), January 4{7,
+                                2019, Bangalore,
+                                India.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Snigdha Das, Dibya Jyoti Roy, Subrata Nandi, Sandip Chakraborty, Bivas Mitra
+                                \UDAT: User
+                                Discrimination
+                                Using
+                                Activity-Time Information\, IEEE Mobile Data Management (MDM) `17, KAIST,
+                                Daejeon, South Korea, 2017
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Praveen Kumar Sharma, BibekPoddar, SoumyoDey, Subrata Nandi, Tanmay De,
+                                MousumiSaha, SandipMondal,
+                                Sujoy
+                                Saha" On
+                                Detecting Acceptable Air Con- tamination in Classrooms using Low Cost Sensors",
+                                IEEE COMSNETS WACI
+                                Work-
+                                shop ,
+                                2017.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Arindam Ghosh, AnubrataSanyal, Amartya Chakraborty, Praveen Kumar Sharma,
+                                Subrata Nandi, Mousumi
+                                Saha,
+                                Sujoy
+                                Saha, \On Automatizing Recognition of Multiple Human Activities using Ultrasonic
+                                Sensor Grid", IEEE
+                                COMSNETS
+                                WACI Workshop, 2017.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Munshi Yusuf Alam, Sunny Saurav, Ratna Mandal, Sujoy Saha, Subrata Nandi,
+                                Sandip Chakraborty, \A
+                                Fair
+                                and
+                                Eective Driver Rating System for Developing Re- gions", IEEE COMSNETS ITS
+                                Workshop, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Arindam Ghosh, SandipMondal, Sujoy Saha, MousumiSaha, Subrata Nandi, \Air
+                                Quality Monitoring
+                                using
+                                Low-cost
+                                Sensing Devices", Mobisys, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Rohit Verma, Aviral Shrivastava, Bivas Mitra, Saha, Niloy Ganguly, Subrata Nandi
+                                and Sandip
+                                Chakraborty,
+                                \UrbanEye: An Outdoor Localization System for Public Transport", INFOCOM, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Bishakh Chandra Ghosh, Kingshuk De, Sujoy Saha, Sub- rata
+                                Nandi, Subhanjan
+                                Saha,
+                                Indrajit
+                                Bhattacharya, Sandip Chakraborty, "On De- sign and Implementation of A Scalable
+                                And Reliable Sync
+                                System
+                                For
+                                Delay Tolerant Challenged Networks", COMSNETS, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Sujoy Saha, Subrata Nandi, \Poster: Road Behavior and Stop- page
+                                Pattern Analysis
+                                from
+                                Public Bus
+                                Trajectories: A Perspective of Developing Region", Mobisys, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Hridoy Sankar Dutta, Bishakh Chandra Ghosh, Krishnandu
+                                Hazra, Sandip
+                                Chakraborty,
+                                Sujoy
+                                Saha, Subrata Nandi, \Oine crisis mapping by opportunistic dissemination of
+                                crisis data after
+                                large-scale
+                                disasters", EM-GIS, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Subrata Nandi, Saikat Kumar Dey, Kingshuk De, Prithvi- raj
+                                Pramanik and
+                                Sujoy
+                                Saha,
+                                \Challenges in Designing Testbed for Evaluating Delay- Tolerant Hybrid
+                                Networks", IEEE PerCom, 2015.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Nitin Agarwal, Subrata Nandi, Projan Das, Aniket Anvit, Sunandini
+                                Sanyal and Sujoy
+                                Saha,
+                                \Temporal
+                                Analysis of Public Bus GPS Traces for Bus Stop Extraction in Developing Cities\,
+                                IEEE PerCom, 2015.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Bishakh Chandra Ghosh, Kingshuk De, Sujoy Saha, Sub- rata
+                                Nandi, Sandip
+                                Chakraborty, \Demo:
+                                pSync: A Peer-to-peer Sync Tool for Challenged Networks", Mobicom CHANTS, 2015.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Nitin Agarwal, Subrata Nandi, Projan Das, Shreyasi Pathak,
+                                Himansu Rathi and Sujoy
+                                Saha,
+                                \A System
+                                for Stoppage Pattern Extraction from Public Bus GPS Traces in Developing
+                                Regions", ACM SIGSPATIAL
+                                2014
+                                (MobiGIS
+                                2014).
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Ratna Mandal, Nitin Agarwal, Subrata Nandi, Sujoy Saha, \Personalised route- map
+                                generation using
+                                crowd
+                                sourced
+                                GPS traces", IEEE ICBIM, 2014.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Sujoy Saha, Nitin Agarwal,Priyam Dhanuka, Subrata Nandi, \Google Map Based User
+                                Interface for
+                                Network
+                                Resource
+                                Planning in Post Disaster Management", COMSNETS 2013 (ACM DEV 2013).
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Sujoy Saha,Vijay Shah, Rohit Verma, Ratna Mandal and Subrata Nandi, \Is It Worth
+                                Taking A Planned
+                                Approach To
+                                Design Ad Hoc Infrastructure For Post Disaster Communication?", ACM MobiCom 2012
+                                (ACM CHANTS 2012).
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Sujoy Saha, Satadal Sengupta, Rohit Verma, Vineet Mishra and Subrata Nandi,
+                                \SRSnF: A Strategy for
+                                Secured
+                                Routing in Spray and Focus Routing Protocol for DTN", Springer CNSA-2012.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Sujoy Saha, Sushovan Patra, Anirudh Sheldekar, Rijo Joseph C, Amartya Mukher-
+                                jee and Subrata
+                                Nandi,
+                                \Post
+                                Disaster Management using Delay Tolerant Net- work", Springer WIMO-2011.</li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Projects for person 2 -->
+            <div id="xyz-projects" style="display: none;">
+                <h3 style="display: none;" data-type="top">Journals for Dr. Sujoy Saha</h3>
+                <div id="topsj">
+                    <ul>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Praveen Kumar Sharma, Bidyut Dalal, Ananya Mondal, Argha Sen, Amartya Banerjee,
+                                    Sandip Mondal, Tanmay De,
+                                    Sujoy Saha,Indoor Air Sensing: A Study in Cost, Energy, Reliability and Fidelity in
+                                    Sensing, Journal of
+                                    Sensing and Imaging (Springer), 2023.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Prithviraj Pramanik, Prasenjit Karmakar, Praveen Kumar Sharma, Soumya- jit
+                                    Chatterjee, Abhijit Roy,
+                                    Santanu Mandal, Subrata Nandi, Sandip Chakraborty, Mousumi Saha, Sujoy
+                                    Saha,AQuaMoHo: Localized Low-Cost
+                                    Outdoor Air Quality Sensing over a Thermo-Hygrometer,ACM Transactions on Sensor
+                                    Networks, 2022.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Ratna Mandal, Prasenjit Karmakar, Soumyajit Chatterjee, Debaleen Das Span- dan,
+                                    Shouvit Pradhan, Sujoy
+                                    Saha, Sandip Chakraborty, Subrata Nandi, " Exploit- ing Multi-modal Contextual
+                                    Sensing for City-bus's
+                                    Stay Location Characterization: Towards Sub-60 Seconds Accurate Arrival Time
+                                    Prediction" ACM
+                                    Transactions on Internet of Things, 2022.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Ratna Mandal, Prasenjit Karmakar, Soumyajit Chatterjee, Debaleen Das Span- dan,
+                                    Shouvit Pradhan, Sujoy
+                                    Saha, Sandip Chakraborty, Subrata Nandi, " Exploit- ing Multi-modal Contextual
+                                    Sensing for City-bus's
+                                    Stay Location Characterization: Towards Sub-60 Seconds Accurate Arrival Time
+                                    Prediction" ACM
+                                    Transactions on Internet of Things, 2022.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Prasenjit Karmakar, Vijay K. Shah, Satyaki Roy, Krishnandu Hazra, Sujoy Saha and
+                                    Subrata Nandi,"Reliable
+                                    Backhauling in Aerial Communication Networks against UAV Failures: A Deep
+                                    Reinforcement Learning
+                                    Approach", EEE Transactions on Network and Service Management.,2022</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Krishnandu Hazra, Vijay K Shah, Satyaki Roy, Swaraj Deep, Sujoy Saha, Subrata Nandi
+                                    "Exploring Biological
+                                    Robustness for Reliable Multi-UAV Networks", IEEE Transactions on Network and
+                                    Service Management, 2021.
+                                </li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Ratna Mandal, Pallav Sonowal, Manish Kumar, Sujoy Saha and Subrata Nandi,
+                                    "RoadSpeedSense: Context-Aware
+                                    Speed Proffling from Smart-phone Sensors", EAI Endorsed Transactions on Energy Web,
+                                    2021.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Krishnandu Hazra, Vijay K Shah, Simone Silvestri, Vaneet Aggarwal, Sajal K Das,
+                                    Subrata Nandi, Sujoy
+                                    Saha,"Designing esocient communication infrastructure in post-disaster situations
+                                    with limited
+                                    availability of network resources", Elsevier Jour- nal of Computer Communications,
+                                    2020.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Arindam Ghosh, Amartya Chakraborty, Joydeep Karmakar,Mousumi Saha, Sujoy Saha,
+                                    "HumanSense:A Framework
+                                    for Collective Human Activity Identification using Heterogeneous Sensor Grid in
+                                    Multi-inhabitant Smart
+                                    Environments" Personal and Ubiquitous Computing, 2020.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Munshi Yusuf Alam and Akash Nandi and Abhay Kumar and Sujoy Saha and Mousumi Saha
+                                    and
+                                    Subrata Nandi and
+                                    Sandip Chakraborty, "Crowdsourcing from the True crowd: Device, vehicle,
+                                    road-surface and driving
+                                    independent road proffling from smartphone sensors", Elsevier Journal of Pervasive
+                                    and Mobile Computing,
+                                    2020.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Kashi Nath Datta, Anindita Banerjee, Partha Sarathi Paul, Subrata Nandi, Sujoy Saha,
+                                    " Asynchronous
+                                    Binomial Galois Field Based Energy Management in DTN Network ", Journal of Wireless
+                                    Networks (Springer),
+                                    2020.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Rohit Verma, Aviral Shrivastava, Kingshuk De, Bivas Mitra, Sujoy Saha, Niloy
+                                    Ganguly,
+                                    Subrata Nandi,
+                                    Sandip Chakroborty ,"A Smartphone-based Passenger As- sistant for Public Bus Commute
+                                    in Developing
+                                    Countries," , IEEE Transactions on Computational Social Systems, 2020.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Partha Sarathi Paul, Bishakh C Ghosh, Hridoy S Datta, Kingshuk De, Arka P Basu,
+                                    Prithviraj Pramanik,
+                                    Sujoy Saha, Sandip Chakraborty, Niloy Ganguly, Subrata Nandi" CRIMP: Here Crisis
+                                    Mapping Goes Osiine ",
+                                    Journal of Network and Computer Applications, 2019.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Arindam Ghosh; Amartya Chakraborty; Dhruv Chakraborty; Mousumi Saha; Sujoy Saha,
+                                    "UltraSense: A
+                                    non-intrusive approach for Human Activity Identification using Heterogeneous
+                                    Ultrasonic Sensor Grid for
+                                    Smart Home Environment", Journal of Ambient Intelligence Humanized Computing (AIHC),
+                                    2019</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Tamal Mondal, Indrajit Bhattacharya; Sujoy Saha; Prithviraj Pramanik; Nai- writa
+                                    Boral; Jaydeep Roy;
+                                    Subhanjan Saha, " A Multi-Criteria Evaluation Approach in Navigation Technique for
+                                    Micro-jet for
+                                    esocient Damage Need Assessment of Shelter Points in Disaster Response Scenario",
+                                    Knowledge-Based
+                                    Systems (Elsevier), 2018.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Sujoy Saha, Subrata Nandi, P. S. Paul, vijay Shah, Akash Roy, Sajal .K Das, "
+                                    Designing delay constrained
+                                    hybrid ad hoc network infrastructure for post-disaster communication", Elsevier
+                                    Journal of Ad Hoc
+                                    Networks, Volume 25, Part B, 2015, pp. 406-427.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Sujoy Saha, Subrata Nandi, Rohit Verma, Satadal Sengupta, Kartikeya Singh, Vivek
+                                    Sinha, Sajal K. Das,
+                                    \Design of esocient Lightweight Strategies to Combat DoS Attack in Delay Tolerant
+                                    Network Routing",
+                                    Journal of Wireless Networks (Springer), 2016, pp. 1-22.</li>
+                            </div>
+                        </div>
+                        <div class="card pub1">
+                            <div class="card-body">
+                                <li>Sujoy Saha, Subrata Nandi, Rohit Verma, Satadal Sengupta, Kartikeya Singh, Vivek
+                                    Sinha, Sajal K. Das,
+                                    \Design of Ecient Lightweight Strategies to Combat DoS Attack in Delay Tolerant
+                                    Network Routing",
+                                    Journal of Wireless Networks (Springer), 2016, pp. 1-22.</li>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+                <h3 style="display: none;" data-type="best">Conferences for Dr. Sujoy Saha</h3>
+                <ul>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Praveen Kumar Sharma, Debjit Chatterjee, Debaleen Das, Sujoy Saha,"Can I take
+                                class in that
+                                classroom
+                                now? In
+                                the perspective of Air Quality", ICDCN 2023
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Nitin Agarwal, Saikat Kumar Dey, Sujoy Saha, Subrata Nandi,
+                                Sandip Chakraborty
+                                ,"GPS
+                                Crowdsensing
+                                for Public Stoppage Planning of City Buses: A Perspective of Developing
+                                Economies",COMSNETS 2022,
+                                Bangalore,2022.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Praveen Kumar Sharma, Prasenjit Karmakar, Soumyajit Chatterjee, Abhijit Roy,
+                                Santanu Mandal,
+                                Sandip
+                                Chakraborty,
+                                Subrata Nandi, Sujoy Saha, "Can I go for a roof walk today? know your housing's
+                                air quality from a
+                                thermo-hygrometer",ACM BUILDSYS 2021, Coimbra, Portugal.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Ratna Mandal, Prasenjit Karmakar, Soumyajit Chatterjee, Debaleen Das Span- dan,
+                                Shouvit Pradhan,
+                                Sujoy
+                                Saha,
+                                Sandip Chakraborty, Subrata Nandi, "Exploit- ing Multi-modal Contextual Sensing
+                                for City-bus's Stay
+                                Location
+                                Characterization: Towards Sub-60 Seconds Accurate Arrival Time Prediction", ACM
+                                SIGSPATIAL 2021,
+                                Beijing, China.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Prasenjit Karmakar, Abhijit Roy, Arpan Saha, Soumyajit Chat-
+                                terjee, Sandip
+                                Chakraborty,
+                                Sujoy
+                                Saha, Subrata Nandi,"Ad-hocBusPoI: Context Analysis of Ad-hoc Stay-locations
+                                from Intra-city Bus
+                                Mobility and
+                                Smartphone Crowdsensing", Proceedings of the 28th International Conference on
+                                Advances in Geographic
+                                Information
+                                Systems, 2020.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Bishakh Chandra Ghosh, Ankan Ghosh, Sujoy Sahaa, Subrata
+                                Nandi, Sandip
+                                Chakraborty,"Disaster Strikes! Internet Blackout! What's the Fate of Crisis
+                                Mapping?", 22nd
+                                International
+                                Conference on Human-Computer Interaction with Mobile Devices and Services, 2020.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Partha Sarathi Paul, Bishakh Chandra Ghosh, Ankan Ghosh, Sujoy Saha, Sub- rata
+                                Nandi, Sandip
+                                Chakraborty,"Aco-Wi:
+                                Acoustic Initiated Wi-Fi Peer-group Com- munication for Opportunistic
+                                Messaging", 22nd International
+                                Conference
+                                on Human- Computer Interaction with Mobile Devices and Services, 2020.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Munshi Yusuf Alam, Harshit Anurag, Md Shahrukh Imam, Sujoy Saha, Mousumi Saha,
+                                Subrata Nandi,
+                                Sandip
+                                Chakraborty,"Urban Safety as a Service During Bike Navigation: My Smartphone Can
+                                Monitor My
+                                Street-Lights", IEEE
+                                International Conference on Smart Computing (SMARTCOMP), 2020.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Krishnandu Hazra, Vijay K. Shah, Mohd Bilal, Simone Silvestri, Sajal K. Das,
+                                Subrata Nandi, and
+                                Sujoy
+                                Saha. "A
+                                Novel Network Architecture for Resource- constrained Post-disaster
+                                Environments." In 2019 11th
+                                International
+                                Conference on Communication Systems Networks (COMSNETS), pp. 328-335. IEEE,
+                                2019.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Partha Sarathi Paul, Chandrika Mukherjee, Bishakh Chandra Ghosh, Sudipta Pandit,
+                                Sujoy Saha, and
+                                Subrata
+                                Nandi.
+                                2019. On Designing Fast-Deployable `Localized' GIS Platform for using `Oine'
+                                during Post-Disaster
+                                Situation. In
+                                In- ternational Conference on Distributed Computing and Networking ( ICDCN'19 ),
+                                January 4{7, 2019,
+                                Bangalore,
+                                India.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Partha Sarathi Paul, Naman Mehta, Aman Kumar Das, Sourav Agarwal, Sujoy Saha,
+                                and Subrata Nandi.
+                                2019.
+                                SURAKSHIT
+                                : A smartphone-based application for `Localized' GIS Data Aggregation in absence
+                                of Internet. In
+                                International
+                                Con- ference on Distributed Computing and Networking (ICDCN '19), January 4{7,
+                                2019, Bangalore,
+                                India.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Kashi Nath Datta, Pradipta Das, Mousumi Saha, Sujoy Saha, Sandip Chakraborty,
+                                "Exploring Visible
+                                Light
+                                Communication System using RTS/CTS Mechanism for Mo- bile Environment", MobiCom
+                                Poster 2018.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Arindam Ghosh, Dhruv Chakraborty, Deepak Prasad, Mousumi Saha, Su- joy Saha,"
+                                Can we recognize
+                                multiple
+                                human
+                                group activities using ultrasonic sen- sors?",COMSNETS 2018.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Praveen Kumar Sharma, Tanmay De, Sujoy Saha,"IoT based indoor environ- ment
+                                data modelling and
+                                prediction",
+                                COMSNETS Graduate Forum 2018.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Praveen Kumar Sharma, BibekPoddar, SoumyoDey, Subrata Nandi, Tanmay De,
+                                MousumiSaha, SandipMondal,
+                                Sujoy
+                                Saha" On
+                                Detecting Acceptable Air Contami- nation in Classrooms using Low Cost Sensors",
+                                IEEE COMSNETS WACI
+                                Workshop ,
+                                2017.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Arindam Ghosh, AnubrataSanyal, Amartya Chakraborty, Praveen Kumar Sharma,
+                                Subrata Nandi, Mousumi
+                                Saha,
+                                Sujoy
+                                Saha, \On Automatizing Recognition of Mul- tiple Human Activities using
+                                Ultrasonic Sensor Grid",
+                                IEEE
+                                COMSNETS
+                                WACI Workshop, 2017.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Munshi Yusuf Alam, Sunny Saurav, Ratna Mandal, Sujoy Saha, Subrata Nandi,
+                                Sandip Chakraborty, \A
+                                Fair
+                                and
+                                Eective Driver Rating System for Developing Re- gions", IEEE COMSNETS ITS
+                                Workshop, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Arindam Ghosh, SandipMondal, Sujoy Saha, MousumiSaha, Subrata Nandi, \Air
+                                Quality Monitoring using
+                                Low-cost
+                                Sensing Devices", Mobisys, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Rohit Verma, Aviral Shrivastava, Bivas Mitra, Sujoy Saha, Niloy Ganguly, Sub-
+                                rata Nandi and
+                                Sandip
+                                Chakraborty,
+                                \UrbanEye: An Outdoor Localization System for Public Transport", INFOCOM, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Partha Sarathi Paul, Bishakh Chandra Ghosh, Kingshuk De, Sujoy Saha, Sub- rata
+                                Nandi, Subhanjan
+                                Saha,
+                                Indrajit
+                                Bhattacharya, Sandip Chakraborty, "On De- sign and Implementation of A Scalable
+                                And Reliable Sync
+                                System
+                                For
+                                Delay Tolerant Challenged Networks", COMSNETS, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Ratna Mandal, Sujoy Saha, Subrata Nandi, \Poster: Road Behavior and Stop- page
+                                Pattern Analysis
+                                from
+                                Public Bus
+                                Trajectories: A Perspective of Developing Region", Mobisys, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Hridoy Sankar Dutta, Bishakh Chandra Ghosh, Krishnandu
+                                Hazra, Sandip
+                                Chakraborty,
+                                Sujoy
+                                Saha, Subrata Nandi, \Oine crisis mapping by opportunistic dissemination of
+                                crisis data after
+                                large-scale
+                                disasters", EM-GIS, 2016.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Partha Sarathi Paul, Subrata Nandi, Saikat Kumar Dey, Kingshuk De, Prithviraj
+                                Pramanik and Sujoy
+                                Saha,
+                                \Challenges in Designing Testbed for Evaluating Delay- Tolerant Hybrid
+                                Networks", IEEE PerCom, 2015.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Nitin Agarwal, Subrata Nandi, Projan Das, Aniket Anvit, Sunan-
+                                dini Sanyal and
+                                Sujoy
+                                Saha,
+                                \Temporal Analysis of Public Bus GPS Traces for Bus Stop Extraction in
+                                Developing Cities\, IEEE
+                                PerCom,
+                                2015.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Partha Sarathi Paul, Bishakh Chandra Ghosh, Kingshuk De, Sujoy Saha, Sub- rata
+                                Nandi, Sandip
+                                Chakraborty, \Demo:
+                                pSync: A Peer-to-peer Sync Tool for Chal- lenged Networks", Mobicom CHANTS,
+                                2015.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Nitin Agarwal, Subrata Nandi, Projan Das, Shreyasi Pathak,
+                                Himansu Rathi and Sujoy
+                                Saha,
+                                \A System
+                                for Stoppage Pattern Extraction from Public Bus GPS Traces in Developing
+                                Regions", ACM SIGSPATIAL
+                                2014
+                                (MobiGIS
+                                2014).
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Ratna Mandal, Nitin Agarwal, Subrata Nandi, Sujoy Saha, \Personalised route- map
+                                generation using
+                                crowd
+                                sourced
+                                GPS traces", IEEE ICBIM, 2014.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Sujoy Saha, Nitin Agarwal,Priyam Dhanuka, Subrata Nandi, \Google Map Based User
+                                Interface for
+                                Network
+                                Resource
+                                Planning in Post Disaster Management", COMSNETS 2013 (ACM DEV 2013).
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Sujoy Saha,Vijay Shah, Rohit Verma, Ratna Mandal and Subrata Nandi, \Is It
+                                Worth Taking A Planned
+                                Approach To
+                                Design Ad Hoc Infrastructure For Post Disaster Communication?", ACM MobiCom 2012
+                                (ACM CHANTS 2012).
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Sujoy Saha, Satadal Sengupta, Rohit Verma, Vineet Mishra and Subrata Nandi,
+                                \SRSnF: A Strategy for
+                                Secured
+                                Routing in Spray and Focus Routing Protocol for DTN", Springer CNSA-2012.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Ratna Mandal, Nitin Agarwal, Subrata Nandi, Sujoy Saha, \Personalised route-
+                                map generation using
+                                crowd
+                                sourced
+                                GPS traces", IEEE ICBIM, 2014.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Sujoy Saha, Nitin Agarwal,Priyam Dhanuka, Subrata Nandi, \Google Map Based User
+                                Interface for
+                                Network
+                                Resource
+                                Planning in Post Disaster Management", COMSNETS 2013 (ACM DEV 2013).
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Sujoy Saha,Vijay Shah, Rohit Verma, Ratna Mandal and Subrata Nandi, \Is It
+                                Worth Taking A Planned
+                                Approach To
+                                Design Ad Hoc Infrastructure For Post Disaster Communication?", ACM MobiCom 2012
+                                (ACM CHANTS 2012).
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li>Sujoy Saha, Satadal Sengupta, Rohit Verma, Vineet Mishra and Subrata Nandi,
+                                \SRSnF: A Strategy for
+                                Secured
+                                Routing in Spray and Focus Routing Protocol for DTN", Springer CNSA-2012.
+                            </li>
+                        </div>
+                    </div>
+                    <div class="card pub1">
+                        <div class="card-body">
+                            <li> Sujoy Saha, Sushovan Patra, Anirudh Sheldekar, Rijo Joseph C, Amartya Mukherjee
+                                and Subrata
+                                Nandi,
+                                \Post
+                                Disaster Management using Delay Tolerant Network", Springer WIMO-2011.
+                            </li>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <script>
+        window.onload = function () {
+            showProjects();
+        }
+        function showProjects() {
+            const personList = document.getElementById('person-list');
+            const selectedPerson = personList.options[personList.selectedIndex].value;
+            const projectList = document.getElementById('project-list');
+            const projectType = document.querySelector('input[name="options"]:checked').value;
+
+            // Show all project lists if no person is selected
+            if (!selectedPerson) {
+                const projectLists = projectList.querySelectorAll('[id$="-projects"]');
+                projectLists.forEach(list => list.style.display = 'block');
+                return;
+            }
+
+            // Hide all project lists and person headers
+            const projectLists = projectList.querySelectorAll('[id$="-projects"]');
+            projectLists.forEach(list => {
+                list.style.display = 'none';
+                const personHeaderTop = list.querySelector('h3[data-type="top"]');
+                const personHeaderBest = list.querySelector('h3[data-type="best"]');
+                personHeaderTop.style.display = 'none';
+                personHeaderBest.style.display = 'none';
+            });
+
+            // Show the selected person's project list and corresponding header
+            const selectedList = document.getElementById(selectedPerson + '-projects');
+            const selectedHeader = selectedList.querySelector(`h3[data-type='${projectType}']`);
+            selectedList.style.display = 'block';
+            selectedHeader.style.display = 'block';
+
+            // Show/hide projects based on the selected project type
+            const projects = selectedList.querySelectorAll('[id$="-topsj"]');
+            projects.forEach(project => {
+                if (projectType === 'all') {
+                    project.style.display = 'block';
+                } else if (projectType === 'top') {
+                    const isTopProject = project.textContent.toLowerCase().includes('top');
+                    project.style.display = isTopProject ? 'block' : 'none';
+                } else if (projectType === 'best') {
+                    const isBestProject = project.textContent.toLowerCase().includes('best');
+                    project.style.display = isBestProject ? 'block' : 'none';
+                }
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
